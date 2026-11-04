@@ -31,7 +31,7 @@ server and checks it against the checklist.
 | WN25-SO-000270 | V-278221 | NTLM prevented from falling back to a null session | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-SO-000270) |
 | WN25-CC-000530 | V-278131 | PowerShell transcription enabled | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000530) |
 | WN25-CC-000090 | V-278088 | Command line data included in process creation events | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000090) |
-| WN25-CC-000280 | V-278106 | Security event log size (196608 KB) | Failed | Passed | [https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000280) |
+| WN25-CC-000280 | V-278106 | Security event log size (196608 KB) | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000280) |
 | WN25-CC-000150 | V-278093 | Downloading print driver packages over HTTP turned off | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000150) |
 
 </details>
