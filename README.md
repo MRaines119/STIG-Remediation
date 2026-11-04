@@ -22,17 +22,17 @@ server and checks it against the checklist.
 
 | STIG ID | Vuln-ID | Finding | Before | After | Script |
 |---|---|---|---|---|---|
-| WN25-SO-000330 | V-278227 | NTLM SSP clients require NTLMv2 session security and 128-bit encryption | Failed | Passed | [Wave 1](scripts/Remediate-STIG-Wave1.ps1) |
-| WN25-CC-000460 | V-278124 | PowerShell script block logging enabled | Failed | Passed | [Wave 1](scripts/Remediate-STIG-Wave1.ps1) |
-| WN25-AU-000585 | V-279920 | Audit Object Access - Registry (Failure) | Failed | Passed | [Wave 1](scripts/Remediate-STIG-Wave1.ps1) |
-| WN25-AU-000586 | V-279921 | Audit Object Access - Registry (Success) | Failed | Passed | [Wave 1](scripts/Remediate-STIG-Wave1.ps1) |
-| WN25-SO-000340 | V-278228 | NTLM SSP servers require NTLMv2 session security and 128-bit encryption | Failed | Passed | [Wave 2](scripts/Remediate-STIG-Wave2.ps1) |
-| WN25-SO-000050 | V-278199 | Audit subcategory settings override category settings | Failed | Passed | [Wave 2](scripts/Remediate-STIG-Wave2.ps1) |
-| WN25-SO-000270 | V-278221 | NTLM prevented from falling back to a null session | Failed | Passed | [Wave 2](scripts/Remediate-STIG-Wave2.ps1) |
-| WN25-CC-000530 | V-278131 | PowerShell transcription enabled | Failed | Passed | [Wave 2](scripts/Remediate-STIG-Wave2.ps1) |
-| WN25-CC-000090 | V-278088 | Command line data included in process creation events | Failed | Passed | [Wave 2](scripts/Remediate-STIG-Wave2.ps1) |
-| WN25-CC-000280 | V-278106 | Security event log size (196608 KB) | Failed | Passed | [Wave 2](scripts/Remediate-STIG-Wave2.ps1) |
-| WN25-CC-000150 | V-278093 | Downloading print driver packages over HTTP turned off | Failed | Passed | [Wave 2](scripts/Remediate-STIG-Wave2.ps1) |
+| WN25-SO-000330 | V-278227 | NTLM SSP clients require NTLMv2 session security and 128-bit encryption | Failed | Passed | [Wave 1](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-SO-000330) |
+| WN25-CC-000460 | V-278124 | PowerShell script block logging enabled | Failed | Passed | [Wave 1](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000460) |
+| WN25-AU-000585 | V-279920 | Audit Object Access - Registry (Failure) | Failed | Passed | [Wave 1](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-AU-000585) |
+| WN25-AU-000586 | V-279921 | Audit Object Access - Registry (Success) | Failed | Passed | [Wave 1](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-AU-000586) |
+| WN25-SO-000340 | V-278228 | NTLM SSP servers require NTLMv2 session security and 128-bit encryption | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-SO-000340) |
+| WN25-SO-000050 | V-278199 | Audit subcategory settings override category settings | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-SO-000050) |
+| WN25-SO-000270 | V-278221 | NTLM prevented from falling back to a null session | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-SO-000270) |
+| WN25-CC-000530 | V-278131 | PowerShell transcription enabled | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000530) |
+| WN25-CC-000090 | V-278088 | Command line data included in process creation events | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000090) |
+| WN25-CC-000280 | V-278106 | Security event log size (196608 KB) | Failed | Passed | [https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000280) |
+| WN25-CC-000150 | V-278093 | Downloading print driver packages over HTTP turned off | Failed | Passed | [Wave 2](https://github.com/MRaines119/STIG-Remediation/blob/main/Scripts/STIG%20-%20WN25-CC-000150) |
 
 </details>
 
