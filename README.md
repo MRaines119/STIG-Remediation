@@ -15,7 +15,8 @@ server and checks it against the checklist.
 
 ## The eleven settings
 
-<img src="images/MjayLabs_STIG_Remediation_Targets.png" width="100%" alt="Eleven DISA STIG findings on mjaylabs-stig01 selected for remediation. 267 checks audited, 103 failed, 11 selected, fixed in two PowerShell waves. All are CAT II. Wave 1: NTLM client session security, PowerShell script block logging, audit registry failures, audit registry successes. Wave 2: NTLM server session security, force audit subcategory settings, block NTLM null session fallback, PowerShell transcription, command line in process events, security event log size, print drivers over HTTP.">
+<img width="2800" height="2174" alt="MjayLabs_STIG_Remediation_Targets" src="https://github.com/user-attachments/assets/ff2105ff-eb7e-4898-894b-d7ec8992caeb" />
+
 
 <details><summary>The eleven as a table, with checklist IDs and scripts</summary>
 
@@ -74,7 +75,3 @@ server and checks it against the checklist.
 Each wave script is standalone. Run it in an elevated PowerShell on the target, reboot, then rescan. Prior values are
 saved to `C:\Rollback\` and rollback commands are in each script's footer. The scripts only set the values their STIGs
 check; review them before running anywhere that is not a lab.
-
----
-
-[Your Name] · [github.com/your-username](https://github.com/your-username) · [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
