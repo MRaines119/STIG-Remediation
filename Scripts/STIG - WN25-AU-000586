@@ -1,0 +1,45 @@
+#
+.SYNOPSIS
+    WN25-AU-000586 - Windows Server 2025 must be configured to audit registry successes
+
+.DESCRIPTION
+    Logs successful access to audited registry keys (Object Access > Registry).
+
+.NOTES
+    Benchmark : DISA Microsoft Windows Server 2025 STIG V1R3
+    Vuln-ID   : V-279921
+    Severity  : CAT II
+    Target    : mjaylabs-stig01 (Windows Server 2025, Azure lab)
+    Verify    : Rescan, then Tenable > Findings > Host Audits, plugin 21156,
+                search "WN25-AU-000586". Expected result: Passed.
+    Run as    : Administrator. Lab use only; review before running elsewhere.
+#>
+#Requires -RunAsAdministrator
+$ErrorActionPreference = 'Stop'
+$StigId   = 'WN25-AU-000586'
+$Rollback = 'C:\Rollback'
+New-Item -ItemType Directory -Path $Rollback -Force | Out-Null
+$Subcategory = 'Registry'
+
+# Save the current setting for rollback
+$Before = (auditpol /get /subcategory:"$Subcategory" | Select-String $Subcategory | Select-Object -First 1).ToString().Trim()
+"$StigId | auditpol | before: $Before" | Out-File "$Rollback\$StigId.txt" -Encoding utf8
+
+# Apply the STIG setting (Success auditing only; the other setting is left unchanged)
+auditpol /set /subcategory:"$Subcategory" /success:enable | Out-Null
+
+# Print the setting back as evidence
+$After = (auditpol /get /subcategory:"$Subcategory" | Select-String $Subcategory | Select-Object -First 1).ToString().Trim()
+Write-Host "$StigId : before [$Before] after [$After]"
+if ($After -match 'Success') {
+    Write-Host "[PASS] $StigId remediated. Rescan to confirm." -ForegroundColor Green
+} else {
+    Write-Host "[FAIL] $StigId setting did not apply." -ForegroundColor Red
+    exit 1
+}
+
+# -----------------------------------------------------------------------------
+# Rollback (run manually only if needed):
+#   auditpol /set /subcategory:"Registry" /success:disable
+# -----------------------------------------------------------------------------
+ 
